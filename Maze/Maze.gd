@@ -38,7 +38,6 @@ var width = 20  						# width of map (in tiles)
 var height = 12  						# height of map (in tiles)
 
 func _ready():
-	randomize()
 	make_maze()
 	
 func check_neighbors(cell, unvisited):

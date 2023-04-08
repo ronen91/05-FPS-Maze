@@ -1,16 +1,28 @@
-# Exercise-05b-Procedural-Generation
+# Project 05-FPS-Maze
 
-Exercise for MSCH-C220
+Context and Date: Created as an assignment at Indiana University-Bloomington. Finished on April 8, 2023
 
-An implementation of a procedurally-generated 3D maze. Also, a simple in-game menu.
+Description: Blow up the Killer Robot standing in your way to escape the maze!
 
 ## Implementation
 
 Built using Godot 3.5
 
+Features include:
+- an explorable, procedurally-generated maze
+- a first-person-playable-character
+- A bomb to interact with
+- An enemy robot to interact with
+- music
+- A main, in-game, and end-game menu
+
+All models used in this project were free and provided at https://www.kenney.nl/assets.
+
+Music created by me using FL Studio Mobile.
+
 ## References
 
-This project is an adaptation of the excellent tutorial from [KidsCanCode](https://kidscancode.org/blog/2018/08/godot3_procgen1/)
+None
 
 ## Future Development
 

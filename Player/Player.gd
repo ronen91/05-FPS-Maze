@@ -2,6 +2,8 @@ extends KinematicBody
 
 onready var Camera = $Pivot/Camera
 
+var to_pickup = null
+
 var gravity = -30
 var max_speed = 8
 var mouse_sensitivity = 0.002
@@ -35,3 +37,25 @@ func _physics_process(delta):
 	velocity.x = desired_velocity.x
 	velocity.z = desired_velocity.z
 	velocity = move_and_slide(velocity, Vector3.UP, true)
+
+	if Input.is_action_just_pressed("pickup"):
+		pickup()
+
+
+func pickup():
+	var bomb = get_node_or_null("Pivot/bomb")
+	if bomb != null:
+		pass
+	elif to_pickup != null:
+		bomb = to_pickup.Pickup.instance()
+		$Pivot.add_child(bomb)
+		to_pickup.queue_free()
+
+
+func _on_Area_body_entered(body):
+	if body.is_in_group("bomb"):
+		to_pickup = body
+
+
+func _on_Area_body_exited(body):
+	to_pickup = null

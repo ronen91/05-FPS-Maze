@@ -8,9 +8,13 @@ Description: Blow up the Killer Robot standing in your way to escape the maze!
 
 Built using Godot 3.5
 
+All models used in this project were free and provided at https://www.kenney.nl/assets.
+
+Music created by me using FL Studio Mobile.
+
 ## References
 
-This project is an adaptation of the excellent tutorial from [KidsCanCode](https://kidscancode.org/blog/2018/08/godot3_procgen1/)
+None
 
 ## Future Development
 

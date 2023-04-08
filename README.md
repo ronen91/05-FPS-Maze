@@ -1,8 +1,8 @@
-# Exercise-05b-Procedural-Generation
+# Project 05-FPS-Maze
 
-Exercise for MSCH-C220
+Context and Date: Created as an assignment at Indiana University-Bloomington. Finished on April 8, 2023
 
-An implementation of a procedurally-generated 3D maze. Also, a simple in-game menu.
+Description: Blow up the Killer Robot standing in your way to escape the maze!
 
 ## Implementation
 

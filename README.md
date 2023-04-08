@@ -8,6 +8,11 @@ Description: Blow up the Killer Robot standing in your way to escape the maze!
 
 Built using Godot 3.5
 
+Features include:
+- an explorable, procedurally-generated maze
+- a first-person-playable-character
+- 
+
 All models used in this project were free and provided at https://www.kenney.nl/assets.
 
 Music created by me using FL Studio Mobile.

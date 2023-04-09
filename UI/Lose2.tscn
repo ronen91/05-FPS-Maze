@@ -2,7 +2,7 @@
 
 [ext_resource path="res://UI/Main.gd" type="Script" id=1]
 
-[node name="Lose" type="Control"]
+[node name="Lose2" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 script = ExtResource( 1 )
@@ -15,7 +15,7 @@ color = Color( 0.266667, 0.266667, 0.266667, 1 )
 [node name="Label" type="Label" parent="."]
 margin_right = 1024.0
 margin_bottom = 300.0
-text = "The Robot Caught You!
+text = "You Ran Out of Time!
 
 YOU LOSE!"
 align = 1

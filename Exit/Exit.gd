@@ -2,7 +2,6 @@ extends Area
 
 var locked = true
 
-
 func _ready():
 	$Light.light_color = Color(1,0,0,1)
 

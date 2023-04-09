@@ -1,6 +1,8 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Player/Player.gd" type="Script" id=1]
+[ext_resource path="res://bomb/bomb.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Camera/shake_camera.tscn" type="PackedScene" id=3]
 
 [sub_resource type="CapsuleMesh" id=1]
 radius = 0.5
@@ -37,8 +39,11 @@ shape = SubResource( 4 )
 [node name="Pivot" type="Position3D" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.6, 0 )
 
-[node name="Camera" type="Camera" parent="Pivot"]
-current = true
+[node name="shake_camera" parent="Pivot" instance=ExtResource( 3 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, 0 )
+
+[node name="bomb" parent="Pivot" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, -0.5, 0.7 )
 
 [node name="Area" type="Area" parent="."]
 

@@ -1,6 +1,6 @@
 extends KinematicBody
 
-onready var Camera = $Pivot/Camera
+onready var Camera = $Pivot/shake_camera
 
 var to_pickup = null
 
@@ -51,11 +51,11 @@ func pickup():
 		$Pivot.add_child(bomb)
 		to_pickup.queue_free()
 
+#func _on_Area_body_entered(body):
+	#if body.name == "bomb":
+		#to_pickup = body
 
-func _on_Area_body_entered(body):
-	if body.is_in_group("bomb"):
-		to_pickup = body
 
+#func _on_Area_body_exited(body):
+	#to_pickup = null
 
-func _on_Area_body_exited(body):
-	to_pickup = null
